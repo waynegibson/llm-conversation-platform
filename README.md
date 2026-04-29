@@ -22,6 +22,8 @@ Production-ready FastAPI backend for persisting LLM conversations and messages u
 
 ## Quick Start
 
+For a full runtime walkthrough (model pull/list, prompting, streaming, and DB persistence checks), see [Runtime Guide](docs/runtime-usage-guide.md).
+
 1. Copy and update the environment file:
 
 ```bash
