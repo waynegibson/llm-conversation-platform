@@ -9,10 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Runtime usage guide in `docs/runtime-usage-guide.md` covering platform startup, Ollama container usage, model syncing, and conversation management
 - GitHub Actions CI workflow for pull requests and `main` pushes with pre-commit, lint, and test gates
 
 ### Changed
 
+- Update the `README.md` with development and release instructions, including the new runtime usage guide and CI workflow details
 - CI triggers optimized to reduce noise (branch strategy and docs/metadata ignores)
 - Branch protection settings-as-code now require the `lint-and-test` status check before merge
 
