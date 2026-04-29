@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- GitHub Actions CI workflow for pull requests and `main` pushes with pre-commit, lint, and test gates
+
+### Changed
+
+- CI triggers optimized to reduce noise (branch strategy and docs/metadata ignores)
+- Branch protection settings-as-code now require the `lint-and-test` status check before merge
+
 ## [0.1.0] - 2026-04-29
 
 ### Added
