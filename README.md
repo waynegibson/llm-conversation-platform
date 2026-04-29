@@ -111,6 +111,26 @@ make test      # pytest with coverage
 make check     # lint + test combined
 ```
 
+## Releases
+
+Track user-facing changes in [CHANGELOG.md](CHANGELOG.md) using Keep a Changelog style and semantic versioning.
+
+1. Update [CHANGELOG.md](CHANGELOG.md) under `Unreleased`.
+2. Run the quality gate:
+
+```bash
+make check
+```
+
+3. Create an annotated tag:
+
+```bash
+make tag VERSION=v0.1.0
+make tag-push VERSION=v0.1.0
+```
+
+4. Cut the GitHub release from the pushed tag.
+
 ## Database Migrations
 
 Migrations live in `migrations/versions/`. The legacy SQL bootstrap file is archived at `docs/archive/schema.sql`; Alembic migrations are the source of truth.
@@ -130,6 +150,10 @@ make migrate
 ## Contributors
 
 - [Wayne Gibson](https://github.com/waynegibson)
+
+## Repository Settings
+
+Repository settings as code live in [.github/settings.yml](.github/settings.yml). GitHub does not natively consume a `settings.json` file for repository configuration; the standard automation-friendly format is YAML, typically applied by the Probot Settings app or equivalent tooling.
 
 ## License
 
